@@ -8,7 +8,7 @@ module.exports = function check(str, bracketsConfig) {
             let closeBracket = bracketsConfig[j][1];
 
             if (char === openBracket) counter++;
-            else if (char === closeBracket) counter--;
+            if (char === closeBracket) counter--;
             if (counter < 0) return false;
         }
     }
